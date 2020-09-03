@@ -22,8 +22,15 @@ addForm.addEventListener('submit', e => {
     if (todo.length) {
         generateTemplate(todo);
         addForm.reset();
-    };
+    }
 
 });
 
+// detete item from todo list
+list.addEventListener('click', e => {
+    //console.log(e.target);
+    if (e.target.classList.contains('delete')) {
+        e.target.parentElement.remove();
+    }
 
+});
