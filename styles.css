@@ -26,3 +26,7 @@ input[type=text] {
   .delete{
     cursor: pointer;
   }
+
+  .filtered {
+    display: none !important;
+  }
